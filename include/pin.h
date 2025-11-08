@@ -16,9 +16,7 @@ enum pin_t : uint8_t {
     SPI_MOSI = GPIO_NUM_13,
     SPI_CLK = GPIO_NUM_14,
 
-    // i2c for IMU
-    SCL = GPIO_NUM_21,
-    SDA = GPIO_NUM_22,
+    // IMU
     IMU_INT = GPIO_NUM_27,
 
     // Buttons

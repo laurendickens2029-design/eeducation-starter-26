@@ -9,9 +9,9 @@
 /**
  * @brief Simple button abstraction with a single callback.
  */
-typedef struct {
+typedef struct button {
     pin_t pin;
-    void (*callback)(void* ctx);  // Function to call when button is pressed
+    void (*callback)(struct button* ctx);  // Function to call when button is pressed
     void* ctx;                    // User data passed to callback
 } button_t;
 
