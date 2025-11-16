@@ -9,6 +9,8 @@ static void on_push_button(button_t *btn) {
 }
 
 void setup() {
+    Serial.begin(9600);
+
     // Set up the button 0
     button_init(&button, BTN_0);
 
